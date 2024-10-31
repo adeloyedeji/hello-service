@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/v1/hello")
 public class HelloController {
     @GetMapping
-    public String getMethodName() {
+    public String helloString() {
         return "Hello World";
     }
     
