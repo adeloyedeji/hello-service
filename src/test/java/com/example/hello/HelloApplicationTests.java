@@ -5,8 +5,9 @@ import org.junit.jupiter.api.Test;
 // @SpringBootTest
 class HelloApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+	//@Test
+	//void contextLoads() {
+
+	//}
 
 }
