@@ -18,7 +18,6 @@ public class HelloController {
         HashMap<String, String> map = new HashMap<>();
         map.put("message", "Hello World");
         return map;
-        //return JSONObject("{'message': 'Hello, World'}").toMap();
     }
     
 }
