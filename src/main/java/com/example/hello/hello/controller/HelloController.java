@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
-
 @RestController
 @RequestMapping("api/v1/hello")
 public class HelloController {
@@ -18,7 +16,6 @@ public class HelloController {
         HashMap<String, String> map = new HashMap<>();
         map.put("message", "Hello World");
         return map;
-        //return JSONObject("{'message': 'Hello, World'}").toMap();
     }
     
 }

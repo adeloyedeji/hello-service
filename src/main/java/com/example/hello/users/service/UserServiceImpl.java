@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.hello.users.mapper.UserMapper;
 import com.example.hello.users.model.UserModel;
+import com.example.hello.users.dto.UserDto;
 import com.example.hello.users.repository.UserRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -19,6 +20,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserMapper userMapper;
 
+
     @Override
     public List<UserModel> getUsers() {
         return userRepository.findAllUsers()
@@ -30,6 +32,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserModel getUserById(UUID userId) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getUserById'");
+        return userMapper.fromEntity(userRepository.findUserById(userId));
     }
 }
