@@ -39,18 +39,8 @@ public class UserRepository {
         return users;
     }
 
-    //private final UserRepository userRepository;
-    //private UserRepository users;
 
-    //private List<UserEntity> allUsers = this.findAllUsers();
-    //public UserEntity findUserById(UUID userId) {
     public UserEntity findUserById(UUID userId) {
-        //System.out.println(userId);
-        //var user = new UserEntity();
-        //return user.getId(userId);
-        //return users.get(0);
-        //throw new UnsupportedOperationException("Unimplemented method 'findUserById'");
-        //return allUsers[0];
         return users.stream().filter(item -> item.getId().equals(userId)).toList().get(0);
     }
 }
